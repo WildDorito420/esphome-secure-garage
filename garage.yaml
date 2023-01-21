@@ -37,13 +37,6 @@ sensor:
     update_interval: 60s
   - platform: uptime
     name: "Garage Uptime"
-  - platform: template
-    id: int_temp
-    name: "Garage ESP Internal Temp"
-    unit_of_measurement: "°C"
-    device_class: "temperature"
-    state_class: "measurement"
-    lambda: return temperatureRead();
     
 binary_sensor:
 - platform: gpio
